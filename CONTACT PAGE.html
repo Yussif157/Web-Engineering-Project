@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            text-decoration: underline;
+            color: #333;
+            letter-spacing: 2px;
+        }
+        
+        .profile-container {
+            margin: 30px auto;
+        }
+        
+        .profile-img {
+            margin: 0 auto;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        
+        .profile-img::before {
+            content: "👤";
+            font-size: 60px;
+        }
+        
+        .contact-info {
+            margin-top: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .contact-field {
+            display: flex;
+            margin: 15px 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            align-items: center;
+        }
+        
+        .field-label {
+            font-weight: bold;
+            min-width: 140px;
+            text-align: right;
+            margin-right: 20px;
+            color: #555;
+        }
+        
+        .field-input {
+            flex: 1;
+            text-align: left;
+        }
+        
+        input[type="text"], 
+        input[type="email"], 
+        input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        input:focus {
+            border-color: #4285f4;
+            outline: none;
+            box-shadow: 0 0 3px rgba(66,133,244,0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTACT PAGE</h1>
+
+    <div class="profile-container">
+        <div class="profile-img"></div>
+    </div>
+
+    <div class="contact-info">
+        <div class="contact-field">
+            <div class="field-label">Name:</div>
+            <div class="field-input">
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+        </div>
+        
+        <div class="contact-field">
+            <div class="field-label">Phone Number:</div>
+            <div class="field-input">
+                <input type="tel" name="phone" placeholder="Enter your phone number">
+            </div>
+        </div>
+        
+        <div class="contact-field">
+            <div class="field-label">Email Address:</div>
+            <div class="field-input">
+                <input type="email" name="email" placeholder="Enter your email address">
+            </div>
+        </div>
+        
+        <div class="contact-field">
+            <div class="field-label">Program:</div>
+            <div class="field-input">
+                <input type="text" name="program" placeholder="Enter your program">
+            </div>
+        </div>
+        
+        <div class="contact-field">
+            <div class="field-label">Level:</div>
+            <div class="field-input">
+                <input type="text" name="level" placeholder="Enter your level">
+            </div>
+        </div>
+        
+        <div class="contact-field">
+            <div class="field-label">Index Number:</div>
+            <div class="field-input">
+                <input type="text" name="index" placeholder="Enter your index number">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
